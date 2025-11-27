@@ -418,6 +418,13 @@ h6 {
     transition-delay: 0 !important;
   }
 }
+/* Sadece telefonlar için yeni kural (768px altı) */
+@media (max-width: 768px) {
+    .hero img {
+        /* Profilinizin sağ tarafta olması nedeniyle, görseli sağa yaslıyoruz. */
+        object-position: right center; 
+    }
+}
 
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
@@ -528,19 +535,19 @@ section,
   justify-content: center;
 }
 
+/*--------------------------------------------------------------
+# Hero Section (Global Kural)
+--------------------------------------------------------------*/
 .hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  
-  /* YENİ AYARLAR: Kapsa ve ORTALA */
-  object-fit: cover;
-  object-position: center center; 
-  
-  z-index: 1;
+ position: absolute;
+ inset: 0;
+ display: block;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ z-index: 1;
 }
+
 
 .hero:before {
   content: "";
