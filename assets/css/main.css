@@ -418,11 +418,12 @@ h6 {
     transition-delay: 0 !important;
   }
 }
-/* Sadece telefonlar için yeni kural (768px altı) */
+/* Sadece telefonlar için kural (768px altı) */
 @media (max-width: 768px) {
     .hero img {
-        /* Profilinizin sağ tarafta olması nedeniyle, görseli sağa yaslıyoruz. */
-        object-position: right center; 
+        /* Yatayda sağa yasla (right), Dikeyde %35'e kaydır.
+           (Yüzün üst kısmını görünür yapmak için 50% yerine 35% deniyoruz.) */
+        object-position: right 35%; 
     }
 }
 
